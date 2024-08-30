@@ -1,0 +1,93 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables
+.env
+.venv
+venv/
+VENV/
+
+# macOS hidden files
+.DS_Store
+
+# Logs
+*.log
+
+# Django stuff:
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest
+.pytest_cache/
+.cache
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# VS Code
+.vscode/
+
+# Unit test / coverage reports
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# MySQL
+*.pid
+
+# Postgres
+*.pgpass
+
+# Redis
+dump.rdb
+
+# Python packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+pip-log.txt
+
+# Environments
+env/
+ENV/
+env.bak/
+env.bak.old/
+
+# JetBrains IDEs
+.idea/
+
+# Additional IDEs
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Others
+*.swp
+*.swo
+*.swn

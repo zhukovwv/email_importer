@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email List</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Email List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Subject</th>
+                <th>Sent Date</th>
+                <th>Received Date</th>
+                <th>Description</th>
+                <th>Attachments</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for message in messages %}
+            <tr>
+                <td>{{ message.id }}</td>
+                <td>{{ message.subject }}</td>
+                <td>{{ message.sent_date }}</td>
+                <td>{{ message.received_date }}</td>
+                <td>{{ message.description }}</td>
+                <td>{{ message.attachments }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
